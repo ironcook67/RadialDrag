@@ -31,11 +31,7 @@ struct RadialDragView: View {
 				Spacer()
 
 				ZStack {
-					AngularGradient(gradient: Gradient(colors: [.radarLight, .black, .radarDark]), center: .center)
-						.blur(radius: 20)
-						.opacity(0.3)
-						.mask(Circle().frame(width: 300, height: 300))
-
+					radarScreen
 					radarGrid
 					radarCircles
 					radarNumbers
@@ -48,8 +44,10 @@ struct RadialDragView: View {
 				Spacer()
 
 				Text("Drag from the center to see the selected positions.")
+					.multilineTextAlignment(.center)
 					.font(.body)
 					.foregroundColor(.white)
+					.padding(.horizontal, 40)
 
 				Spacer()
 			}
@@ -67,8 +65,15 @@ struct RadialDragView: View {
 		}
 	}
 
+	var radarScreen: some View {
+		AngularGradient(gradient: Gradient(colors: [.radarLight, .black, .radarDark]), center: .center)
+			.blur(radius: 20)
+			.opacity(0.3)
+			.mask(Circle().frame(width: 300, height: 300))
+	}
+
 	var radarGrid: some View {
-		Group {
+		ZStack {
 			ForEach(0..<12) { index in
 				Line()
 					.stroke(.white, style: StrokeStyle(lineWidth: 1, dash: [4]))
@@ -88,7 +93,7 @@ struct RadialDragView: View {
 	}
 
 	var radarCircles:  some View {
-		Group {
+		ZStack {
 			Circle()
 				.fill(Color.radarLight)
 				.frame(width: 50)
