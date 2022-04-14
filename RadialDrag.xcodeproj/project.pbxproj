@@ -13,7 +13,6 @@
 		4D9BB11F280819D600FED473 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D9BB11E280819D600FED473 /* Preview Assets.xcassets */; };
 		4D9BB12728081A3F00FED473 /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9BB12628081A3F00FED473 /* Color+Ext.swift */; };
 		4D9BB12928081A4800FED473 /* View+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9BB12828081A4800FED473 /* View+Ext.swift */; };
-		4D9BB12B28081A6E00FED473 /* RadialDragViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9BB12A28081A6E00FED473 /* RadialDragViewModel.swift */; };
 		4D9BB12D28081A9500FED473 /* DragPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9BB12C28081A9500FED473 /* DragPosition.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,7 +24,6 @@
 		4D9BB11E280819D600FED473 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4D9BB12628081A3F00FED473 /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
 		4D9BB12828081A4800FED473 /* View+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Ext.swift"; sourceTree = "<group>"; };
-		4D9BB12A28081A6E00FED473 /* RadialDragViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadialDragViewModel.swift; sourceTree = "<group>"; };
 		4D9BB12C28081A9500FED473 /* DragPosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragPosition.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -60,7 +58,6 @@
 			isa = PBXGroup;
 			children = (
 				4D9BB12528081A2E00FED473 /* Extensions */,
-				4D9BB12A28081A6E00FED473 /* RadialDragViewModel.swift */,
 				4D9BB119280819D500FED473 /* RadialDragView.swift */,
 				4D9BB12C28081A9500FED473 /* DragPosition.swift */,
 				4D9BB117280819D500FED473 /* RadialDragApp.swift */,
@@ -183,7 +180,6 @@
 				4D9BB12928081A4800FED473 /* View+Ext.swift in Sources */,
 				4D9BB11A280819D500FED473 /* RadialDragView.swift in Sources */,
 				4D9BB118280819D500FED473 /* RadialDragApp.swift in Sources */,
-				4D9BB12B28081A6E00FED473 /* RadialDragViewModel.swift in Sources */,
 				4D9BB12728081A3F00FED473 /* Color+Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

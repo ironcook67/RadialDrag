@@ -8,14 +8,15 @@
 import SwiftUI
 
 struct RadialDragView: View {
-	@StateObject var viewModel = ViewModel()
 	@State var selectedPosition: DragPosition = .none {
 		didSet {
-			if selectedPosition != oldValue {
-				viewModel.setPositions(newPosition: selectedPosition, oldPosition: oldValue)
+			if selectedPosition != oldValue && selectedPosition != .none {
+				haptic.notificationOccurred(.warning)
 			}
 		}
 	}
+
+	let haptic = UINotificationFeedbackGenerator()
 
 	var body: some View {
 		ZStack {
